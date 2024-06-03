@@ -1,0 +1,11 @@
+import random
+
+Karakter =  "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+soru = int(input("Kaç karakterli bir şifre oluşturacaksın?"))
+şifre = ""
+
+for i in range(soru):
+    şifre = şifre + random.choice(Karakter)
+
+print(şifre)
